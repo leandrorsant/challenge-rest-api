@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            function calcAge(){
+                const years = document.getElementById("age-years").value
+                const months = document.getElementById("age-months").value
+                const days = document.getElementById("age-days").value
+                alert(
+                    "Age in days: "+
+                    String(Number(years*365) + Number(months*30) + Number(days))
+                );
+            }
+
+            
+        </script>
+        <input id="age-years" type="text" placeholder="Age - years"/><br>
+        <input id="age-months" type="text" placeholder="Age - months"/><br>
+        <input id="age-days" type="text" placeholder="Age - days"/><br>
+        <button onclick="calcAge()">Calculate</button>
+    </body>
+</html>
